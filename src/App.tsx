@@ -98,7 +98,7 @@ export default function App() {
           >
             <div className="glass rounded-2xl p-4 rotate-2 hover:rotate-0 transition-transform duration-700">
               <img 
-                src="src/pexels-kindelmedia-7688986.jpg" 
+                src="/src/pexels-kindelmedia-7688986.jpg" 
                 alt="Funil de Vendas e Performance" 
                 className="rounded-lg w-full shadow-2xl"
                 referrerPolicy="no-referrer"
@@ -208,8 +208,8 @@ export default function App() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { title: "Conversão de Vendas", desc: "Alta performance em tráfego pago para serviços diretos.", img: "src/Screenshot_20250803_184426_Meta Ads.jpg" },
-              { title: "Visitas e Qualificação", desc: "Tráfego qualificado para o perfil da empresa.", img: "src/Screenshot_20250929_132859_Meta Ads.jpg" },
-              { title: "Escala de Volume", desc: "Aumento massivo no alcance e impressões da marca.", img: "src/Screenshot_20251017_140720_Meta Ads.jpg" }
+              { title: "Visitas e Qualificação", desc: "Tráfego qualificado para o perfil da empresa.", img: "/src/resultado2.jpg" },
+              { title: "Escala de Volume", desc: "Aumento massivo no alcance e impressões da marca.", img: "/src/resultado3" }
             ].map((item, i) => (
               <motion.div 
                 key={i}
@@ -219,7 +219,7 @@ export default function App() {
               >
                 <div className="glass rounded-3xl p-4 mb-6 overflow-hidden">
                   <img 
-                    src={item.img} 
+                    src={"/src/resultado1.jpg"} 
                     alt={item.title} 
                     className="rounded-2xl w-full grayscale group-hover:grayscale-0 transition-all duration-700"
                     referrerPolicy="no-referrer"
