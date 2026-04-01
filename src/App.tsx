@@ -21,7 +21,7 @@ import {
 import { motion } from 'motion/react';
 
 // ✅ IMPORTS DAS IMAGENS CORRIGIDOS
-import heroImg from '../pexels-kindelmedia-7688986.jpg';
+import heroImg from './pexels-kindelmedia-7688986.jpg';
 import resultado1 from '../resultado1.jpg';
 import resultado2 from '../resultado2.jpg';
 import resultado3 from '../resultado3.jpg';
