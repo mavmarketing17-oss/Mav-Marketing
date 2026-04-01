@@ -20,6 +20,12 @@ import {
 } from 'lucide-react';
 import { motion } from 'motion/react';
 
+// ✅ IMPORTS DAS IMAGENS CORRIGIDOS
+import heroImg from './pexels-kindelmedia-7688986.jpg';
+import resultado1 from './resultado1.jpg';
+import resultado2 from './resultado2.jpg';
+import resultado3 from './resultado3.jpg';
+
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
   whileInView: { opacity: 1, y: 0 },
@@ -97,11 +103,11 @@ export default function App() {
             className="relative"
           >
             <div className="glass rounded-2xl p-4 rotate-2 hover:rotate-0 transition-transform duration-700">
+              {/* ✅ HERO IMAGE CORRIGIDA */}
               <img 
-                src="/src/pexels-kindelmedia-7688986.jpg" 
+                src={heroImg}
                 alt="Funil de Vendas e Performance" 
                 className="rounded-lg w-full shadow-2xl"
-                referrerPolicy="no-referrer"
               />
             </div>
             {/* Decorative elements */}
@@ -207,9 +213,10 @@ export default function App() {
           </motion.div>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { title: "Conversão de Vendas", desc: "Alta performance em tráfego pago para serviços diretos.", img: "src/Screenshot_20250803_184426_Meta Ads.jpg" },
-              { title: "Visitas e Qualificação", desc: "Tráfego qualificado para o perfil da empresa.", img: "/src/resultado2.jpg" },
-              { title: "Escala de Volume", desc: "Aumento massivo no alcance e impressões da marca.", img: "/src/resultado3" }
+              // ✅ RESULTS IMAGES CORRIGIDAS
+              { title: "Conversão de Vendas", desc: "Alta performance em tráfego pago para serviços diretos.", img: resultado1 },
+              { title: "Visitas e Qualificação", desc: "Tráfego qualificado para o perfil da empresa.", img: resultado2 },
+              { title: "Escala de Volume", desc: "Aumento massivo no alcance e impressões da marca.", img: resultado3 }
             ].map((item, i) => (
               <motion.div 
                 key={i}
@@ -219,10 +226,9 @@ export default function App() {
               >
                 <div className="glass rounded-3xl p-4 mb-6 overflow-hidden">
                   <img 
-                    src={"/src/resultado1.jpg"} 
+                    src={item.img}
                     alt={item.title} 
                     className="rounded-2xl w-full grayscale group-hover:grayscale-0 transition-all duration-700"
-                    referrerPolicy="no-referrer"
                   />
                 </div>
                 <h3 className="text-xl font-bold mb-2">{item.title}</h3>
