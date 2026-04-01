@@ -98,7 +98,7 @@ export default function App() {
           >
             <div className="glass rounded-2xl p-4 rotate-2 hover:rotate-0 transition-transform duration-700">
               <img 
-                src="/src/pexels-kindelmedia-7688986.jpg" 
+                src="/src/pexels-kindelmedia-7688986.JPG" 
                 alt="Funil de Vendas e Performance" 
                 className="rounded-lg w-full shadow-2xl"
                 referrerPolicy="no-referrer"
